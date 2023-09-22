@@ -141,44 +141,20 @@ header a {
     height: 16px;
 }
 
-.active-button {
-    padding: 0;
+.dot {
     position: relative;
-    margin-right: 10px;
-    width: 16px;
-    height: 16px;
-    border-radius: 25px;
-    border: none;
-    background-color: #BB945F;
     cursor: pointer;
-}
-
-.active-button:before {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 26px;
-    height: 26px;
-    top: -5px;
-    bottom: -5px;
-    left: -5px;
-    right: -5px;
-    padding: 0px;
-}
-
-.inactive-button {
-    padding: 0;
-    position: relative;
-    margin-right: 10px;
-    width: 16px;
     height: 16px;
-    border-radius: 25px;
-    border: none;
+    width: 16px;
+    margin: 0 5px;
     background-color: #0C0C0E;
-    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
-.inactive-button:before {
+.dot::before {
     content: '';
     position: absolute;
     display: block;
@@ -189,6 +165,10 @@ header a {
     left: -5px;
     right: -5px;
     padding: 0px;
+}
+
+.active {
+    background-color: #BB945F;
 }
 
 .favorites {
@@ -357,7 +337,103 @@ header a {
     padding: 0;
     left: 20px;
     bottom: 15px;
+    background-color: #fff;
+    border: 1px solid #0C0C0E;
+    border-radius: 3px;
 }
+
+#own {
+    border: 1px solid #BB945F;
+    color: #BB945F;
+}
+
+.coffee-shop{
+    padding: 20px;
+    padding-bottom: 40px;
+    margin: 0;
+}
+
+.coffee-shop p {
+    margin: 40px 0;
+    color: #000;
+    text-align: center;
+    font-weight: 400;
+    line-height: 40px; /* 200% */
+    letter-spacing: 2px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.coffee-and-tea-menu {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.menu section h3 {
+    color: #BB945F;
+    font-family: "Forum", sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 100% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    padding: 0;
+    margin: 0 0 40px 0;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.menu-item p {
+    font-weight: 400;
+    line-height: 40px; /* 200% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+    min-width: 210px;
+    text-align: left;
+}
+
+.menu-item hr {
+    width: 100px;
+    height: 1px;
+    background: #BB945F;
+}
+
+.menu-item span {
+    color: #000;
+    font-family: "Forum", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 200% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.desserts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 40px;
+}
+
+
+
+
 
 
 
