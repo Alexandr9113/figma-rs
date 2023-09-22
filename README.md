@@ -1,1 +1,1 @@
-# rs-school
+https://alexandr9113.github.io/figma-rs/

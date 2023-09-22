@@ -8,15 +8,123 @@
     <link href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Library</title>
+</head>
 <body>
     <header>
-
+        <h1 class="logo">Brooklyn Public Library</h1>
+        <div class="union-container">
+            <nav>
+                <ul class="n-list">
+                    <li><a href="#about" class="n-item">About</a></li>
+                    <li><a href="#favorites" class="n-item">Favorites</a></li>
+                    <li><a href="#cofee-shop" class="n-item">Cofee shop</a></li>
+                    <li><a href="#contacts" class="n-item">Contacts</a></li>
+                    <li><a href="#library-card" class="n-item">Library Card</a></li>
+                </ul>
+            </nav>
+            <span class="profile">
+                <img src="assets/svg/icon_profile.svg" alt="profile">
+            </span>
+        </div>
     </header>
     <main>
-
+        <img src="assets/img/welcome.png" alt="welcome to the brooklyn library">
+        <section class="about" id="about">
+            <div class="section-title">
+                <h2>About</h2>
+                <hr>
+            </div>
+            <p class="about-txt">The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside</p>
+            <div class="images-item">
+                <img src="assets/img/image 1.png" alt="image 1">
+                <img src="assets/img/image 2.png" alt="image 2">
+                <img src="assets/img/image 3.png" alt="image 3">
+            </div>
+            <div class="pagination first-screen">
+                <button class="active-button"></button>
+                <button class="inactive-button"></button>
+                <button class="inactive-button"></button>
+            </div>
+        </section>
+        <section class="favorites" id="favorites">
+            <div class="section-title">
+                <h2>Favorites</h2>
+                <hr>
+            </div>
+            <form class="seasons-form">
+                <p>Pick favorites of season</p>
+                <div class="seasons">
+                    <input type="radio" id="winter-season" name="season" value="winter">
+                    <label for="winter-season">Winter</label>
+                    <input type="radio" id="spring-season" name="season" value="spring">
+                    <label for="spring-season">Spring</label>
+                    <input type="radio" id="summer-season" name="season" value="summer">
+                    <label for="summer-season">Summer</label>
+                    <input type="radio" id="autumn-season" name="season" value="autumn">
+                    <label for="autumn-season">Autumn</label>
+                </div>
+            </form>
+            <div class="books">
+                <div class="bg-description">
+                    <h3>Staf Picks</h3>
+                    <hr>
+                    <h4 class="book-title">The Book Eaters</h4>
+                    <h4 class="author">By Sunyi Dean</h4>
+                    <p>An unusual sci-fi story about a book eater woman who tries desperately to save her dangerous mind-eater son from tradition and certain death. Complete with dysfunctional family values, light Sapphic romance, and a strong, complex protagonist. Not for the faint of heart.</p>
+                    <button>Buy</button>
+                    <img src="assets/png/The Book Eaters.png" alt="THE BOOK EATERS">
+                </div>
+                <div class="bg-description">
+                    <h3>Staf Picks</h3>
+                    <hr>
+                    <h4 class="book-title">Cackle</h4>
+                    <h4 class="author">By Rachel Harrison</h4>
+                    <p>Are your Halloween movies of choice The Witches of Eastwick and Practical Magic? Look no further than here - where a woman recovering from a breakup moves to a quaint town in upstate New York and befriends a beautiful witch.</p>
+                    <button>Buy</button>
+                    <img src="assets/png/Cackle.png" alt="Cackle">
+                </div>
+                <div class="bg-description">
+                    <h3>Staf Picks</h3>
+                    <hr>
+                    <h4 class="book-title">Dante: Poet of the Secular World</h4>
+                    <h4 class="author">By Erich Auerbach</h4>
+                    <p>Auerbach's engaging book places the 'Comedy' within the tradition of epic, tragedy, and philosophy in general, arguing for Dante's uniqueness as one who raised the individual and his drama of soul into something of divine significance—an inspired introduction to Dante's main themes.</p>
+                    <button>Buy</button>
+                    <img src="assets/png/Dante.png" alt="Dante">
+                </div>
+                <div class="bg-description">
+                    <h3>Staf Picks</h3>
+                    <hr>
+                    <h4 class="book-title">The Last Queen</h4>
+                    <h4 class="author">By Clive Irving</h4>
+                    <p>A timely and revelatory new biography of Queen Elizabeth (and her family) exploring how the Windsors have evolved and thrived as the modern world has changed around them.</p>
+                    <button>Buy</button>
+                    <img src="assets/png/The Last Queen.png" alt="The Last Queen">
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-
+        <div class="adress">
+            <a href="">286 Cadman Plaza, New York, NY 11238, United States</a>
+            <span><pre>Mon - Fri
+08:00 am - 07:00 pm</pre></span>
+        </div>
+        <div class="social">
+            <div class="social-media">
+                <a href="https://github.com/Alexandr9113" target="_blank"><img src="assets/svg/u_twitter-alt.svg" alt="twitter"></a>
+                <a href="https://github.com/Alexandr9113" target="_blank"><img src="assets/svg/u_instagram.svg" alt="instagram"></a>
+                <a href="https://github.com/Alexandr9113" target="_blank"><img src="assets/svg/u_facebook-f.svg" alt="facebook"></a>
+            </div>
+            <span><pre>Sat - Sun
+08:00 am - 07:00 pm</pre></span>
+        </div>
+        <hr>
+        <div class="footer-rss">
+            <p>2023</p>
+            <a href="https://rs.school/js-stage0/">The Rolling Scopes School</a>
+            <a href="https://github.com/Alexandr9113">Alexandr9113</a>
+        </div>
     </footer>
 </body>
 </html>
