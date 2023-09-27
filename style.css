@@ -1,15 +1,16 @@
 html {
     scroll-behavior: smooth;
+    
 }
 
 body {
     padding: 0;
     margin: auto;
+    /* display: flex; */
     width: 1440px;
-    display: flex;
-    flex-direction: column;
+    /* flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: flex-start; */
     font-family: "Inter", "Arial", "Helvetica", sans-serif;
     font-size: 20px;
     font-style: normal;
@@ -24,7 +25,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0;
-    width: 1440px;
     height: 90px;
     background-color: #0C0C0E;
 }
@@ -129,7 +129,6 @@ header a {
     gap: 20px;
     margin: 0;
     padding: 0;
-    width: 1440px;
     background: #FFFFFF;
 }
 
@@ -241,7 +240,6 @@ label{
 .books {
     display: flex;
     flex-wrap: wrap;
-    width: 1440px;
     align-items: center;
     justify-content: flex-start;
     column-gap: 240px;
@@ -328,7 +326,7 @@ label{
     left: 390px;
 }
 
-.bg-description button {
+.buy {
     position: absolute;
     width: 75px;
     height: 30px;
@@ -343,12 +341,29 @@ label{
     cursor: pointer;
 }
 
+.buy:hover{
+    background-color: #BB945F;
+    border: none;
+    transition: 0.5s;
+}
+
 #own {
+    position: absolute;
+    width: 75px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    left: 20px;
+    bottom: 15px;
+    background-color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
     border: 1px solid #BB945F;
     color: #BB945F;
 }
 
 .coffee-shop{
+    width: 1400px;
     padding: 20px;
     padding-bottom: 40px;
     margin: 0;
@@ -365,7 +380,8 @@ label{
 
 .menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 480px;
 }
 
 .coffee-and-tea-menu {
@@ -434,7 +450,6 @@ label{
 
 .contacts {
     display: flex;
-    width: 1440px;
     padding: 20px 20px 40px 20px;
     flex-direction: column;
     align-items: center;
@@ -448,6 +463,14 @@ label{
     gap: 201px;
 }
 
+.text-info {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .text-info h3 {
     font-size: 20px;
     font-style: normal;
@@ -456,24 +479,28 @@ label{
     letter-spacing: 2px;
     text-transform: capitalize;
     margin:0;
-    padding: 0;
-}
-
-.text-info ul {
-    margin: 40px 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-}
-
-.text-info h3 {
     margin-bottom: 20px;
+    padding: 0;
+}
+
+.text-info p {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 200% */
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    padding: 0;
+    margin: 0px;
+}
+
+.text-info p a {
+    text-decoration: none;
+    color: #000000;
 }
 
 .library-card {
+    padding: 0;
     width: 1440px;
     height: 614px;
 }
@@ -496,6 +523,8 @@ label{
 }
 
 .card-body {
+    width: 600px;
+    height: 386px;
     margin: 0;
     padding: 0;
     border: 3px solid #BB945F;
@@ -560,6 +589,12 @@ label{
     cursor: pointer;
 }
 
+.card-body form button:hover{
+    transition: 0.5s;
+    background-color: #BB945F;
+    border: none;
+}
+
 .get-a-card h3{
     font-family: "Forum", sans-serif;
     font-size: 30px;
@@ -571,8 +606,7 @@ label{
 
 .flex-container {
     margin: 0;
-    padding: 0;
-    width: 1440px;
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
 }
@@ -623,6 +657,12 @@ label{
     cursor: pointer;
 }
 
+.get-a-card button:hover {
+    transition: 0.5s;
+    background-color: #BB945F;
+    border: none;
+}
+
 footer {
     padding: 0;
     margin: 0;
@@ -632,14 +672,12 @@ footer {
 }
 
 .adress {
-    padding: 0;
-    margin: 20px;
-    margin-bottom: 10px;
+    padding: 20px;
+    margin: 0;
+    padding-bottom: 10px;
     display: flex;
-    width: 1400px;
     justify-content: space-between;
     align-items: center;
-    flex-shrink: 0;
 }
 
 .adress a {
@@ -666,26 +704,19 @@ footer {
 
 .social {
     padding: 0;
-    margin: 0 0 30px 20px;
+    margin: 0 20px 30px 20px;
     display: flex;
-    width: 1400px;
     height: 40px;
     justify-content: space-between;
     align-items: center;
 }
 
-.social-media {
-    display: inline-flex;
-    width: 102px;
-    height: 24px;
-    justify-content: center;
-    align-items: flex-start;
+.social-list {
+    display: flex;
+    margin: 0;
+    padding: 0;  
+    list-style: none;
     gap: 15px;
-}
-
-.social-media a{
-    width: 24px;
-    height: 24px;
 }
 
 .social p {

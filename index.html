@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width"/>
+    <title>Library</title>
+    <link rel="icon" href="./assets/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Library</title>
+    <meta name="viewport" content="width=device-width"/>
 </head>
 <body>
     <header>
@@ -17,7 +18,7 @@
                 <ul class="n-list">
                     <li><a href="#about" class="n-item">About</a></li>
                     <li><a href="#favorites" class="n-item">Favorites</a></li>
-                    <li><a href="#cofee-shop" class="n-item">Cofee shop</a></li>
+                    <li><a href="#coffee-shop" class="n-item">Cofee shop</a></li>
                     <li><a href="#contacts" class="n-item">Contacts</a></li>
                     <li><a href="#library-card" class="n-item">Library Card</a></li>
                 </ul>
@@ -28,7 +29,7 @@
         </div>
     </header>
     <main>
-        <img src="assets/img/welcome.png" alt="welcome to the brooklyn library">
+        <section class="welcome"><img src="assets/img/welcome.png" alt="welcome to the brooklyn library"></section>
         <section class="about" id="about">
             <div class="section-title">
                 <h2>About</h2>
@@ -71,7 +72,7 @@
                     <h4 class="book-title">The Book Eaters</h4>
                     <h4 class="author">By Sunyi Dean</h4>
                     <p>An unusual sci-fi story about a book eater woman who tries desperately to save her dangerous mind-eater son from tradition and certain death. Complete with dysfunctional family values, light Sapphic romance, and a strong, complex protagonist. Not for the faint of heart.</p>
-                    <button>Buy</button>
+                    <button class="buy">Buy</button>
                     <img src="assets/png/TheBookEaters.png" alt="THE BOOK EATERS">
                 </div>
                 <div class="bg-description">
@@ -80,7 +81,7 @@
                     <h4 class="book-title">Cackle</h4>
                     <h4 class="author">By Rachel Harrison</h4>
                     <p>Are your Halloween movies of choice The Witches of Eastwick and Practical Magic? Look no further than here - where a woman recovering from a breakup moves to a quaint town in upstate New York and befriends a beautiful witch.</p>
-                    <button>Buy</button>
+                    <button class="buy">Buy</button>
                     <img src="assets/png/Cackle.png" alt="Cackle">
                 </div>
                 <div class="bg-description">
@@ -89,7 +90,7 @@
                     <h4 class="book-title">Dante: Poet of the Secular World</h4>
                     <h4 class="author">By Erich Auerbach</h4>
                     <p>Auerbach's engaging book places the 'Comedy' within the tradition of epic, tragedy, and philosophy in general, arguing for Dante's uniqueness as one who raised the individual and his drama of soul into something of divine significance—an inspired introduction to Dante's main themes.</p>
-                    <button>Buy</button>
+                    <button class="buy">Buy</button>
                     <img src="assets/png/Dante.png" alt="Dante">
                 </div>
                 <div class="bg-description">
@@ -98,8 +99,8 @@
                     <h4 class="book-title">The Last Queen</h4>
                     <h4 class="author">By Clive Irving</h4>
                     <p>A timely and revelatory new biography of Queen Elizabeth (and her family) exploring how the Windsors have evolved and thrived as the modern world has changed around them.</p>
-                    <button id="own">Own</button>
-                    <img src="assets/png/The Last Queen.png" alt="The Last Queen">
+                    <button id="own" disabled>Own</button>
+                    <img src="assets/png/TheLastQueen.png" alt="The Last Queen">
                 </div>
             </div>
         </section>
@@ -110,7 +111,7 @@
             </div>
             <p>In our library, we have of cozy coffee shop, welcoming in customers with frothy cappuccinos and friendly conversation. You can get a favorite book and read in coffee shop. Our barista to cook you best coffee, and also you can try desserts from bakery.</p>
             <div class="menu">
-                <section class="coffee-and-tea-menu">
+                <div class="coffee-and-tea-menu">
                     <h3>Coffee & Tea</h3>
                     <div class="menu-item">
                         <p>Cold Brew Coffee</p>
@@ -142,8 +143,8 @@
                         <hr>
                         <span>$2</span>
                     </div>
-                </section>
-                <section class="desserts">
+                </div>
+                <div class="desserts">
                     <h3>Desserts & Cakes</h3>
                     <div class="menu-item">
                         <p>Forest Gateau</p>
@@ -175,10 +176,10 @@
                         <hr>
                         <span>$14</span>
                     </div>
-                </section>
+                </div>
             </div>
         </section>
-        <section itemscope itemtype="http://schema.org/Organization" class="contacts">
+        <section class="contacts" id="contacts">
             <div class="section-title">
                 <h2>Our contacts</h2>
                 <hr>
@@ -186,18 +187,16 @@
             <div class="contacts-info">
                 <div class="text-info">
                     <h3>For all Library inquiries:</h3>
-                    <ul>
-                        <li>Please call <span itemprop="telephone">(617) 730-2370</span></li>
-                        <li>For TTY service, please call <span itemprop="telephone">(617) 730-2370</span></li>
-                        <li>Putterham Library: <span itemprop="telephone">(617) 730-2385</span></li>
-                    </ul>
+                    <p>Please call <a href="tel:(617) 730-2370">(617) 730-2370</a></p>
+                    <p>For TTY service, please call <a href="tel:(617) 730-2370">(617) 730-2370</a></p>
+                    <p>Putterham Library: <a href="tel:(617) 730-2385">(617) 730-2385</a></p>
                     <h3>Senior Staff</h3>
-                    <p>Library Director: <strong>Amanda Hirst</strong></p>
+                    <p>Library Director: <strong><a href="mailto:AmandaHirst@gmail.com">Amanda Hirst</a></strong></p>
                 </div>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d778.4138131259258!2d-73.99124487675304!3d40.69565512418039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a49b6395abd%3A0x5b6c5e44eb578313!2sBrooklyn%20Public%20Library%20-%20Brooklyn%20Heights%20Branch!5e0!3m2!1sru!2sru!4v1695719864519!5m2!1sru!2sru" width="696" height="414" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
-        <section class="library-card">
+        <section class="library-card" id="library-card">
             <div class="section-title">
                 <h2>Digital Library Cards</h2>
                 <hr>
@@ -227,15 +226,15 @@
     </main>
     <footer>
         <div class="adress">
-            <a href="">286 Cadman Plaza, New York, NY 11238, United States</a>
+            <a href="https://maps.app.goo.gl/WDwYyTWZhNpd5jzJ7">286 Cadman Plaza, New York, NY 11238, United States</a>
             <p>Mon - Fri<br/>08:00 am - 07:00 pm</p>
         </div>
         <div class="social">
-            <div class="social-media">
-                <a href="https://github.com/Alexandr9113" target="_blank"><img src="assets/svg/u_twitter-alt.svg" alt="twitter"></a>
-                <a href="https://github.com/Alexandr9113" target="_blank"><img src="assets/svg/u_instagram.svg" alt="instagram"></a>
-                <a href="https://github.com/Alexandr9113" target="_blank"><img src="assets/svg/u_facebook-f.svg" alt="facebook"></a>
-            </div>
+            <ul class="social-list">
+                <li><a href="https://github.com/Alexandr9113" target="_blank"><img src="assets/svg/u_twitter-alt.svg" alt="twitter"></a></li>
+                <li><a href="https://github.com/Alexandr9113" target="_blank"><img src="assets/svg/u_instagram.svg" alt="instagram"></a></li>
+                <li><a href="https://github.com/Alexandr9113" target="_blank"><img src="assets/svg/u_facebook-f.svg" alt="facebook"></a></li>
+            </ul>
             <p>Sat - Sun<br>08:00 am - 07:00 pm</p>
         </div>
         <hr>
