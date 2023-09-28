@@ -365,7 +365,6 @@ label{
 .coffee-shop{
     width: 1400px;
     padding: 20px;
-    padding-bottom: 40px;
     margin: 0;
 }
 
@@ -449,18 +448,14 @@ label{
 }
 
 .contacts {
-    display: flex;
+    width: 1400px;
     padding: 20px 20px 40px 20px;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
 }
 
 .contacts-info {
+    padding-top: 40px;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 201px;
+    justify-content: space-between;
 }
 
 .text-info {
